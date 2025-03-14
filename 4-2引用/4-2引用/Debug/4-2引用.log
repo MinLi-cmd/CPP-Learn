@@ -1,0 +1,3 @@
+﻿  函数库.cpp
+D:\C语言\练习\C++Project\4-2引用\4-2引用\函数库.cpp(62): warning C4172: 返回局部变量或临时变量的地址: a
+  4-2引用.vcxproj -> D:\C语言\练习\C++Project\4-2引用\Debug\4-2引用.exe

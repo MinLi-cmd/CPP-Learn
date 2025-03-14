@@ -1,0 +1,117 @@
+#include "函数声明库.h"
+
+/*
+* 案例描述：
+* 1.电脑主要组成部件为CPU（用于计算），显卡（用于显示），内存条（用于存储）
+* 2.将每个零件封装出抽象基类，并且提供不同的厂商生产不同的零件，例如Intel厂商和Lenovo厂商
+* 创建电脑类提供让电脑工作的函数，并且调用每个零件工作的接口
+* 测试时组装三台不同的电脑进行工作
+*/
+
+/*====================================类声明====================================*/
+
+/*=========抽象类=========*/
+class AbstractPart
+{
+public:
+	virtual void Calculator(void) = 0;
+	virtual void Display(void) = 0;
+	virtual void Storage(void) = 0;
+};
+
+/*=========Intel类=========*/
+class Intel61 :public AbstractPart
+{
+public:
+	void Calculator(void);
+	void Display(void);
+	void Storage(void);
+};
+
+/*=========Lenovo类=========*/
+class Lenovo61 :public AbstractPart
+{
+public:
+	void Calculator(void);
+	void Display(void);
+	void Storage(void);
+};
+
+/*=========电脑类=========*/
+class Computer61
+{
+public:
+	Computer61(AbstractPart* ap);
+	void Work(void);
+	~Computer61(void);
+private:
+	AbstractPart* m_Part;
+};
+
+
+/*/*====================================案例-电脑组装的函数入口/*====================================*/
+
+void Study_AnLi_AssembleComputer(void)
+{
+	Computer61 c1(new Intel61);
+	Computer61 c2(new Lenovo61);
+	c1.Work();
+	c2.Work();
+}
+
+/*/*====================================函数实现/*====================================*/
+
+/*=========电脑类函数=========*/
+Computer61::Computer61(AbstractPart* ap)
+{
+	this->m_Part = ap;
+}
+
+void Computer61::Work(void)
+{
+	this->m_Part->Calculator();
+	this->m_Part->Display();
+	this->m_Part->Storage();
+}
+
+Computer61::~Computer61(void)
+{
+	if (this->m_Part != NULL)
+	{
+		delete this->m_Part;
+		this->m_Part = NULL;
+		cout << "Computer61 析构函数调用" << endl;
+	}
+}
+
+/*=========Intel类函数=========*/
+void Intel61::Calculator(void)
+{
+	cout << "Intel厂商 CPU正在运行" << endl;
+}
+
+void Intel61::Display(void)
+{
+	cout << "Intel厂商 显卡正在运行" << endl;
+}
+
+void Intel61::Storage(void)
+{
+	cout << "Intel厂商 内存条正在运行" << endl;
+}
+
+/*=========Lenovo类函数=========*/
+void Lenovo61::Calculator(void)
+{
+	cout << "Lenovo厂商 CPU正在运行" << endl;
+}
+
+void Lenovo61::Display(void)
+{
+	cout << "Lenovo厂商 显卡正在运行" << endl;
+}
+
+void Lenovo61::Storage(void)
+{
+	cout << "Lenovo厂商 内存条正在运行" << endl;
+}
