@@ -53,5 +53,8 @@
     <ClInclude Include="7Person.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="9UserArr.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

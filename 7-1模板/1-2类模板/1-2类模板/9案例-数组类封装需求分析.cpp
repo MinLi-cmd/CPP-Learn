@@ -10,10 +10,80 @@
 * 
 */
 
+#include"0函数声明库.h"
 #include <iostream>
 using namespace std;
+#include "9UserArr.hpp"
+
+class Person91
+{
+public:
+	Person91() :_name("1"), _age(0) {}
+	Person91(string name, int age) : _name(name), _age(age) {}
+
+	string GetName(void) { return this->_name; }
+
+	int GetAge(void) { return this->_age; }
+
+private:
+	string _name;
+	int _age;
+};
+
+void TestPrint91(UserArr91<int>& u)
+{
+	for (short i = 0; i < u.GetSize(); i++)
+	{
+		cout << u[i] << endl;
+	}
+	cout << "该容器的容量为：" << u.GetCapacity() << endl;
+	cout << "该容器中数据个数为：" << u.GetSize() << endl;
+}
+
+void TestPrint91(UserArr91<Person91>& u)//重载
+{
+	for (short i = 0; i < u.GetSize(); i++)
+	{
+		cout <<"姓名为：" << u[i].GetName() <<"\t年龄为："<<u[i].GetAge() << endl;
+	}
+	cout << "该容器的容量为：" << u.GetCapacity() << endl;
+	cout << "该容器中数据个数为：" << u.GetSize() << endl;
+}
 
 void AnLi_ArrClass(void)
 {
+	CoutLine('=', 50);
+	cout << endl;
+
+	UserArr91<int> u1(5);
+	for (int i = 0; i < 5; i++)
+	{
+		u1.PushBlock(i);
+	}
+	TestPrint91(u1);
+
+	CoutLine('=', 50);
+	cout << endl;
+
+	UserArr91<int> u2(u1);
+	u2.PopBlock();
+	u2.PopBlock();
+	TestPrint91(u2);
+
+	CoutLine('=', 50);
+	cout << endl;
+
+	UserArr91<Person91> u3(5);
+
+	Person91 p1("张三", 20); u3.PushBlock(p1);
+	Person91 p2("李四", 21); u3.PushBlock(p2);
+	Person91 p3("王五", 22); u3.PushBlock(p3);
+	Person91 p4("赵六", 23); u3.PushBlock(p4);
+	Person91 p5("陈七", 24); u3.PushBlock(p5);
+
+	TestPrint91(u3);
+
+	CoutLine('=', 50);
+	cout << endl;
 
 }
