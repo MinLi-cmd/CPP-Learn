@@ -48,12 +48,18 @@
     <ClCompile Include="9案例-数组类封装需求分析.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="29案例-通用数组类第二次练习.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="7Person.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="9UserArr.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="29MyArray.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

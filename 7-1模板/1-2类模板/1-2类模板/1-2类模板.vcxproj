@@ -130,6 +130,7 @@
     <ClCompile Include="0主函数.cpp" />
     <ClCompile Include="0函数声明库.h" />
     <ClCompile Include="1类模板语法.cpp" />
+    <ClCompile Include="29案例-通用数组类第二次练习.cpp" />
     <ClCompile Include="2类模板与函数模板区别.cpp" />
     <ClCompile Include="3类模板中成员函数创建的时机.cpp" />
     <ClCompile Include="4类模板对象做函数参数.cpp" />
@@ -140,6 +141,7 @@
     <ClCompile Include="9案例-数组类封装需求分析.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="29MyArray.h" />
     <ClInclude Include="7Person.hpp" />
     <ClInclude Include="9UserArr.hpp" />
   </ItemGroup>

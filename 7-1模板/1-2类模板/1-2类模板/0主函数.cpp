@@ -2,7 +2,7 @@
 
 int main(void)
 {
-	AnLi_ArrClass();
+	Test_UniversalArrayClass();
 
 	system("pause");
 	return 0;

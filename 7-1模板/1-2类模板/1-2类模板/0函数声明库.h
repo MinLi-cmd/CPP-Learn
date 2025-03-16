@@ -16,6 +16,7 @@ void Study_LeiMuBanFenWeiJianBianXie(void);
 void Study_LeiMuBanAndFriend(void);
 void AnLi_ArrClass(void);
 
+void Test_UniversalArrayClass(void);
 
 /*====================================∫Í∂®“Â====================================*/
 typedef unsigned long long int ULL_int;
