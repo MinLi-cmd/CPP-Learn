@@ -2,7 +2,7 @@
 
 int main(void)
 {
-	Study_VectorCunFangNeiZhiDataType();
+	Study_VectorCunFangZiDingYiDataType();
 
 	system("pause");
 	return 0;

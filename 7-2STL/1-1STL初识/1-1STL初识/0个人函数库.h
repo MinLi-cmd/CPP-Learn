@@ -7,6 +7,7 @@
 /*====================================函数声明====================================*/
 
 void Study_VectorCunFangNeiZhiDataType(void);
+void Study_VectorCunFangZiDingYiDataType(void);
 
 /*====================================类型定义====================================*/
 typedef unsigned long long int ULL_int;
