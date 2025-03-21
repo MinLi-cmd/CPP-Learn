@@ -8,6 +8,7 @@
 
 void Study_VectorCunFangNeiZhiDataType(void);
 void Study_VectorCunFangZiDingYiDataType(void);
+void Study_ContainerNestContainer(int a);
 
 /*====================================类型定义====================================*/
 typedef unsigned long long int ULL_int;

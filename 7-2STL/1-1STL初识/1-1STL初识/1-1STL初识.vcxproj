@@ -130,6 +130,7 @@
     <ClCompile Include="0主程序.cpp" />
     <ClCompile Include="1vectorc存放内置数据类型.cpp" />
     <ClCompile Include="2Vector存放自定义数据类型.cpp" />
+    <ClCompile Include="3容器嵌套容器.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="0个人函数库.h" />

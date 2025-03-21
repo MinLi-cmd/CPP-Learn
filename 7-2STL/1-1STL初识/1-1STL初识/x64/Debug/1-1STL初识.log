@@ -1,3 +1,2 @@
-﻿  2Vector存放自定义数据类型.cpp
-D:\C语言\练习\C++Project\c-learning\7-2STL\1-1STL初识\1-1STL初识\2Vector存放自定义数据类型.cpp(41,34): error C2065: “itBegin”: 未声明的标识符
-D:\C语言\练习\C++Project\c-learning\7-2STL\1-1STL初识\1-1STL初识\2Vector存放自定义数据类型.cpp(41,78): error C2065: “itBegin”: 未声明的标识符
+﻿  3容器嵌套容器.cpp
+  1-1STL初识.vcxproj -> D:\C语言\练习\C++Project\c-learning\7-2STL\1-1STL初识\x64\Debug\1-1STL初识.exe
