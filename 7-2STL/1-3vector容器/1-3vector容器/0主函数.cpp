@@ -5,7 +5,7 @@ using namespace std;
 
 int main(void)
 {
-	Study_VectorInsertAndErase();
+	Study_VectorSwap();
 
 	system("pause");
 	return 0;

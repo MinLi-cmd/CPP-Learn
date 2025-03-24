@@ -9,6 +9,12 @@
 		erase(const_iterator pos); // 删除迭代器指向的元素
 		erase(const_iterator start, const_iterator end); // 删除迭代器从 start 到 end 之间的元素
 		clear(); // 删除容器中所有元素
+
+		尾插 ——  push_back
+		尾删 ——  pop_back
+		插入 ——  insert	（位置迭代器）
+		删除 ——  erase	（位置迭代器）
+		清空 ——  clear	
 */
 
 #include <iostream>
