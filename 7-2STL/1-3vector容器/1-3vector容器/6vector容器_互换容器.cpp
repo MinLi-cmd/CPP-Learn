@@ -61,8 +61,8 @@ void Study_VectorSwap(void)
 
 	std::cout << std::endl;
 
-	/*std::vector<int>(v3).swap(v3);*/
-	v3.swap(v3);
+	//v3.swap(v3)不能实现收缩
+	std::vector<int>(v3).swap(v3);
 	std::cout << "swap收缩完大小之后：" << std::endl;
 	std::cout << "v3的容量为：" << v3.capacity() << std::endl;
 	std::cout << "v3的大小为：" << v3.size() << std::endl;
