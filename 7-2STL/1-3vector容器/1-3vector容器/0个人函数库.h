@@ -7,6 +7,7 @@ void Study_VectorCapacityAndSize(void);
 void Study_VectorInsertAndErase(void);
 void Study_VectorDataAccess(void);
 void Study_VectorSwap(void);
+void Study_VectorReserver(void);
 
 
 /*====================================类型定义====================================*/

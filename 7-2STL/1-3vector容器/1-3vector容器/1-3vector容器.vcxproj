@@ -134,6 +134,7 @@
     <ClCompile Include="4vector容器_插入和删除.cpp" />
     <ClCompile Include="5vector容器_数据存取.cpp" />
     <ClCompile Include="6vector容器_互换容器.cpp" />
+    <ClCompile Include="7vector容器_预留空间.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="0个人函数库.h" />
