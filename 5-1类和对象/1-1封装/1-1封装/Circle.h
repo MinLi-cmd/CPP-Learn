@@ -17,7 +17,7 @@ public:
 	void CircleAndPoint(Point& p);
 private:
 	//Ë½ÓÐÈ¨ÏÞ
-		double  Circle_r;
+	double  Circle_r;
 	Point Circle_Center;
 };
 

@@ -15,6 +15,14 @@
 	大小操作：
 		empty(); //判断堆栈是否为空
 		size(); //返回栈的大小
+
+	总结：
+		入队 --- push
+		出队 --- pop
+		返回队头元素 --- front
+		返回队尾元素 --- back
+		判断队是否为空 --- empty
+		返回队列大小 --- size
 */
 
 #include <iostream>
