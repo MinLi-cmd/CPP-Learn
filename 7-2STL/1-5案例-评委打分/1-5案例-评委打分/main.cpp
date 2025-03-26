@@ -12,11 +12,41 @@
 
 #include <iostream>
 #include <vector>
+#include <deque>
+#include <string>
 #include <algorithm>
+#include "player.h"
+
+
 
 int main(void)
 {
+	srand((unsigned int)time(NULL));
+
+	std::vector<Player> v;
+
+	//在vector容器重新分配内存的时候这个迭代器会失效
+	/*std::vector<Player>::iterator userit = v.begin();*/
+	
+	//创建5名选手
+	CreatedPlayer(v);
+	
+	//评委打分
+	Judging(v);
+
+	//for (int i = 1; i <= 5; i++)
+	//{
+	//	v.push_back(p[i - 1]);
+	//	for (int j = 1; j <= 10; j++)
+	//	{
+	//		//v[i - 1]._scores.push_back(j * j * i);//这里的警告是怕存入的数字超出int范围
+	//	}
+	//}
+
+	//测试
+	PrintInfo(v);
 
 	system("pause");
 	return 0;
 }
+
