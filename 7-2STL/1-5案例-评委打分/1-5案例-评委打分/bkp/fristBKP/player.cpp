@@ -47,7 +47,7 @@ void PrintInfo(const std::vector<Player>& _v)
 		{
 			std::cout << (*dit) << " ";
 		}
-		std::cout << "\t总分：" << vit->_scoresSum << "\t平均分：" << vit->_scoresPinhJun;
+		std::cout << "总分：" << vit->_scoresSum << "\t平均分：" << vit->_scoresPinhJun;
 		std::cout << std::endl;
 	}
 }
