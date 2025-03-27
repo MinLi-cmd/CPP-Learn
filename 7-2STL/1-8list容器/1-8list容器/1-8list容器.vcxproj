@@ -132,6 +132,10 @@
     <ClCompile Include="1list容器_构造函数.cpp" />
     <ClCompile Include="2.list容器_赋值和交换.cpp" />
     <ClCompile Include="3list容器_大小操作.cpp" />
+    <ClCompile Include="4list容器_插入和删除.cpp" />
+    <ClCompile Include="5list容器_数据存取.cpp" />
+    <ClCompile Include="6list容器_反转和排序.cpp" />
+    <ClCompile Include="7案例-排序案例.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

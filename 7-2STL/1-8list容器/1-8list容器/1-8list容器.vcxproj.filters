@@ -30,5 +30,17 @@
     <ClCompile Include="3list容器_大小操作.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="4list容器_插入和删除.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5list容器_数据存取.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="6list容器_反转和排序.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="7案例-排序案例.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
